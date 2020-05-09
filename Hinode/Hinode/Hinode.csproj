@@ -6,24 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20200508093226_Customer.cs" />
-    <Compile Remove="Migrations\20200508093226_Customer.Designer.cs" />
-    <Compile Remove="Migrations\20200508093510_Customer.cs" />
-    <Compile Remove="Migrations\20200508093510_Customer.Designer.cs" />
-    <Compile Remove="Migrations\20200508094344_Customer.cs" />
-    <Compile Remove="Migrations\20200508094344_Customer.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
   </ItemGroup>
 
 </Project>

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Hinode.Models;
+using hinode.Models;
 
-namespace Hinode.Controllers
+namespace hinode.Controllers
 {
     public class HomeController : Controller
     {
