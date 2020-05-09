@@ -1,6 +1,6 @@
 using System;
 
-namespace hinode.Models
+namespace Hinode.Models
 {
     public class ErrorViewModel
     {
