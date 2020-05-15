@@ -20,6 +20,17 @@ namespace Hinode.Controllers
 
         public IActionResult Index()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                // GetUserId() によりユニークなユーザ識別子を取得
+                // (例: "6f95ed96-730c-4c01-ad76-ea6080a19fbe")
+                string id = User.Identity.GetUserId();
+                ViewBag.Message = "Your id = " + id;
+            }
+            else
+            {
+                ViewBag.Message = "No login information";
+            }
             return View();
         }
 
