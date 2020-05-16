@@ -6,7 +6,9 @@
 @if (SignInManager.IsSignedIn(User))
 {
     <li class="nav-item">
-        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">ようこそ @User.Identity.Name 様</a>
+<!--    <a  class="nav-link text-dark" asp-area="Identity" asp-page="/UserConfigs" title="Menu">ようこそ @User.Identity.Name 様</a>   -->
+        <a class="nav-link text-dark" asp-area="" asp-controller="UserConfigs" asp-action="Menu">@User.Identity.Name</a>
+
     </li>
     <li class="nav-item">
         <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
@@ -17,7 +19,7 @@
 else
 {
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">新規登録</a>
     </li>
     <li class="nav-item">
         <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>

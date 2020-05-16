@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Hinode.Models;
+using Microsoft.AspNet.Identity;
 
 namespace Hinode.Controllers
 {
