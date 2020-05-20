@@ -16,6 +16,8 @@ namespace Hinode.Data
 
         public DbSet<UserConfig> UserConfig { get; set; }
 
+        public DbSet<UserDiv> UserDiv { get; set; }
+
 
 
 
